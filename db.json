@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "images": [
+        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80"
+      ],
+      "title": "Minimal watch",
+      "desc": "Slim 40mm stainless steel case with a brushed sunray dial and genuine leather strap. Water-resistant to 50 meters, scratch-resistant mineral crystal, and a reliable quartz movement — designed for daily wear from the office to the weekend.",
+      "price": 120,
+      "discountPercentage": 10,
+      "category": "Accessories",
+      "stock": 14
+    },
+    {
+      "id": 2,
+      "images": [
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80"
+      ],
+      "title": "Wireless headphones",
+      "desc": "Premium over-ear headphones with hybrid active noise cancellation and up to 30 hours of battery life. Memory-foam ear cushions, fold-flat hinges for travel, USB-C fast charging, and a balanced sound profile tuned for music, podcasts, and voice calls.",
+      "price": 89,
+      "discountPercentage": 0,
+      "category": "Electronics",
+      "stock": 32
+    },
+    {
+      "id": 3,
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+        "/uploads/migrated-1776673406735-9c15ead0-b110-4662-b21a-cb39b547cf61.png"
+      ],
+      "title": "Running shoes",
+      "desc": "Breathable engineered mesh upper with a responsive foam midsole and durable rubber outsole. Lightweight cushioning for road runs, gym sessions, and long days on your feet; runs true to size with a secure heel lock.",
+      "price": 75,
+      "discountPercentage": 15,
+      "category": "Fashion",
+      "stock": 8
+    },
+    {
+      "images": [
+        "/uploads/migrated-1776673406741-488ca9c0-9653-4094-ae2c-811c6360005b.png",
+        "/uploads/migrated-1776673406746-25d7abdb-1e24-4303-8ba3-50706de3a670.png"
+      ],
+      "title": "T-Shirt",
+      "desc": "test t shirt",
+      "price": 50,
+      "discountPercentage": 5,
+      "category": "Fashion",
+      "stock": 4,
+      "id": 4
+    }
+  ]
+}
