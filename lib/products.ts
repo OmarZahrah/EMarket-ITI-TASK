@@ -1,18 +1,23 @@
-import { getApiUrl } from "@/lib/api";
+import { findAllProducts, findProductById } from "@/lib/product-store";
 import type { Product } from "@/types/product";
 
 export async function getProducts(): Promise<Product[]> {
-  const res = await fetch(`${getApiUrl()}/products`, { cache: "force-cache" });
-  if (!res.ok) return [];
-  return res.json();
+  try {
+    return await findAllProducts();
+  } catch {
+    return [];
+  }
 }
 
 export async function getProduct(id: string): Promise<Product | null> {
-  const res = await fetch(`${getApiUrl()}/products/${id}`, {
-    cache: "force-cache",
-  });
-  if (!res.ok) return null;
-  return res.json();
+  const parsedId = Number(id);
+  if (!Number.isInteger(parsedId) || parsedId <= 0) return null;
+
+  try {
+    return await findProductById(parsedId);
+  } catch {
+    return null;
+  }
 }
 
 export async function getProductIds(): Promise<{ id: string }[]> {
